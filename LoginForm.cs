@@ -32,9 +32,7 @@ namespace Projektni_Zadatak_03_Vjezbe
             }
             catch (Exception ex)
             {
-
-                lbError.Text = ex.Message;
-                
+                lbError.Text = ex.Message;       
             }
         }
 

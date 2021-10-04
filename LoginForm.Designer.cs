@@ -129,6 +129,7 @@ namespace Projektni_Zadatak_03_Vjezbe
             this.Controls.Add(this.tbServer);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQL Server Login";
             this.ResumeLayout(false);
             this.PerformLayout();

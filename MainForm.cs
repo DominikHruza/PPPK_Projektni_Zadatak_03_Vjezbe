@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Projektni_Zadatak_03_Vjezbe.Dal;
+using Projektni_Zadatak_03_Vjezbe.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,17 @@ namespace Projektni_Zadatak_03_Vjezbe
         public MainForm()
         {
             InitializeComponent();
+            Init();
+        }
+
+        private void Init()
+        {
+            LoadDatabases();
+        }
+
+        private void LoadDatabases()
+        {
+            cbDatabases.DataSource = new List<Database>(RepositoryFactory.GetRepository().GetDatabases());
         }
     }
 }

@@ -29,107 +29,237 @@ namespace Projektni_Zadatak_03_Vjezbe
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabResults = new System.Windows.Forms.TabPage();
-            this.tabMessages = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbDatabases = new System.Windows.Forms.ComboBox();
+            this.BtnNewQuery = new System.Windows.Forms.Button();
+            this.LbProcedureParameters = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TbProcedure = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.LbProcedures = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.LbViewColumns = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.LbTableColums = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LbViews = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LbTables = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.CbDatabases = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // BtnNewQuery
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(184, 68);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(724, 245);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.BtnNewQuery.Location = new System.Drawing.Point(255, 24);
+            this.BtnNewQuery.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnNewQuery.Name = "BtnNewQuery";
+            this.BtnNewQuery.Size = new System.Drawing.Size(82, 27);
+            this.BtnNewQuery.TabIndex = 37;
+            this.BtnNewQuery.Text = "New Query";
+            this.BtnNewQuery.UseVisualStyleBackColor = true;
+            this.BtnNewQuery.Click += new System.EventHandler(this.BtnNewQuery_Click);
             // 
-            // tabControl1
+            // LbProcedureParameters
             // 
-            this.tabControl1.Controls.Add(this.tabResults);
-            this.tabControl1.Controls.Add(this.tabMessages);
-            this.tabControl1.Location = new System.Drawing.Point(184, 319);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(731, 177);
-            this.tabControl1.TabIndex = 1;
+            this.LbProcedureParameters.FormattingEnabled = true;
+            this.LbProcedureParameters.Location = new System.Drawing.Point(979, 374);
+            this.LbProcedureParameters.Margin = new System.Windows.Forms.Padding(2);
+            this.LbProcedureParameters.Name = "LbProcedureParameters";
+            this.LbProcedureParameters.Size = new System.Drawing.Size(142, 251);
+            this.LbProcedureParameters.TabIndex = 35;
             // 
-            // tabResults
+            // label8
             // 
-            this.tabResults.Location = new System.Drawing.Point(4, 22);
-            this.tabResults.Name = "tabResults";
-            this.tabResults.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResults.Size = new System.Drawing.Size(723, 151);
-            this.tabResults.TabIndex = 0;
-            this.tabResults.Text = "Results";
-            this.tabResults.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(859, 374);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(114, 13);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Procedure parameters:";
             // 
-            // tabMessages
+            // TbProcedure
             // 
-            this.tabMessages.Location = new System.Drawing.Point(4, 22);
-            this.tabMessages.Name = "tabMessages";
-            this.tabMessages.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMessages.Size = new System.Drawing.Size(723, 74);
-            this.tabMessages.TabIndex = 1;
-            this.tabMessages.Text = "Messages";
-            this.tabMessages.UseVisualStyleBackColor = true;
+            this.TbProcedure.Location = new System.Drawing.Point(444, 374);
+            this.TbProcedure.Margin = new System.Windows.Forms.Padding(2);
+            this.TbProcedure.Multiline = true;
+            this.TbProcedure.Name = "TbProcedure";
+            this.TbProcedure.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TbProcedure.Size = new System.Drawing.Size(396, 251);
+            this.TbProcedure.TabIndex = 33;
             // 
-            // label1
+            // label7
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Write query:";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(335, 374);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 13);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Procedure definition:";
             // 
-            // cbDatabases
+            // LbProcedures
             // 
-            this.cbDatabases.FormattingEnabled = true;
-            this.cbDatabases.Location = new System.Drawing.Point(26, 68);
-            this.cbDatabases.Name = "cbDatabases";
-            this.cbDatabases.Size = new System.Drawing.Size(121, 21);
-            this.cbDatabases.TabIndex = 3;
+            this.LbProcedures.FormattingEnabled = true;
+            this.LbProcedures.Location = new System.Drawing.Point(73, 374);
+            this.LbProcedures.Margin = new System.Windows.Forms.Padding(2);
+            this.LbProcedures.Name = "LbProcedures";
+            this.LbProcedures.Size = new System.Drawing.Size(239, 251);
+            this.LbProcedures.TabIndex = 31;
+            this.LbProcedures.SelectedIndexChanged += new System.EventHandler(this.LbProcedures_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 374);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Procedures:";
+            // 
+            // LbViewColumns
+            // 
+            this.LbViewColumns.FormattingEnabled = true;
+            this.LbViewColumns.Location = new System.Drawing.Point(979, 76);
+            this.LbViewColumns.Margin = new System.Windows.Forms.Padding(2);
+            this.LbViewColumns.Name = "LbViewColumns";
+            this.LbViewColumns.Size = new System.Drawing.Size(142, 251);
+            this.LbViewColumns.TabIndex = 29;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(901, 76);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "View Columns:";
+            // 
+            // LbTableColums
+            // 
+            this.LbTableColums.FormattingEnabled = true;
+            this.LbTableColums.Location = new System.Drawing.Point(444, 76);
+            this.LbTableColums.Margin = new System.Windows.Forms.Padding(2);
+            this.LbTableColums.Name = "LbTableColums";
+            this.LbTableColums.Size = new System.Drawing.Size(142, 251);
+            this.LbTableColums.TabIndex = 27;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(360, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 13);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Table Columns:";
+            // 
+            // LbViews
+            // 
+            this.LbViews.FormattingEnabled = true;
+            this.LbViews.Location = new System.Drawing.Point(655, 76);
+            this.LbViews.Margin = new System.Windows.Forms.Padding(2);
+            this.LbViews.Name = "LbViews";
+            this.LbViews.Size = new System.Drawing.Size(185, 251);
+            this.LbViews.TabIndex = 25;
+            this.LbViews.SelectedIndexChanged += new System.EventHandler(this.LbViews_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(614, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Views:";
+            // 
+            // LbTables
+            // 
+            this.LbTables.FormattingEnabled = true;
+            this.LbTables.Location = new System.Drawing.Point(73, 76);
+            this.LbTables.Margin = new System.Windows.Forms.Padding(2);
+            this.LbTables.Name = "LbTables";
+            this.LbTables.Size = new System.Drawing.Size(239, 251);
+            this.LbTables.TabIndex = 23;
+            this.LbTables.SelectedIndexChanged += new System.EventHandler(this.LbTables_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 37);
+            this.label2.Location = new System.Drawing.Point(27, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Databases:";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Tables:";
+            // 
+            // CbDatabases
+            // 
+            this.CbDatabases.FormattingEnabled = true;
+            this.CbDatabases.Location = new System.Drawing.Point(73, 28);
+            this.CbDatabases.Name = "CbDatabases";
+            this.CbDatabases.Size = new System.Drawing.Size(142, 21);
+            this.CbDatabases.TabIndex = 21;
+            this.CbDatabases.SelectedIndexChanged += new System.EventHandler(this.CbDatabases_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Databases:";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 536);
+            this.ClientSize = new System.Drawing.Size(1175, 691);
+            this.Controls.Add(this.BtnNewQuery);
+            this.Controls.Add(this.LbProcedureParameters);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.TbProcedure);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.LbProcedures);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.LbViewColumns);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.LbTableColums);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.LbViews);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LbTables);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbDatabases);
+            this.Controls.Add(this.CbDatabases);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.richTextBox1);
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Query Window";
-            this.tabControl1.ResumeLayout(false);
+            this.Text = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabResults;
-        private System.Windows.Forms.TabPage tabMessages;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbDatabases;
+        private System.Windows.Forms.Button BtnNewQuery;
+        private System.Windows.Forms.ListBox LbProcedureParameters;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox TbProcedure;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox LbProcedures;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox LbViewColumns;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox LbTableColums;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox LbViews;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox LbTables;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox CbDatabases;
+        private System.Windows.Forms.Label label1;
     }
 }
